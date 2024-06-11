@@ -1,12 +1,16 @@
 ---
-import Hero from "../components/Hero.astro";
-import NavBar from "../components/NavBar.astro";
-import Layout from "../layout/Layout.astro";
-
-
+import Hero from "../components/Hero.astro"
+import NavBar from "../components/NavBar.astro"
+import Layout from "../layout/Layout.astro"
 ---
 
 <Layout>
-	<NavBar />
-	<Hero />
+  <NavBar />
+  <Hero />
+  <div
+    class=" absolute bottom-5 right-5 font-light font-mono tracking-wide opacity-60"
+  >
+    By
+    <a href="https://github.com/joshtin2505" target="_blank" class="hover:underline"> Joshtin.Dev </a>
+  </div>
 </Layout>
