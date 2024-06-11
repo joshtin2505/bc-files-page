@@ -1,14 +1,191 @@
 ---
+import Angular from "./icons/Angular.astro"
+import NestJS from "./icons/NestJS.astro"
+import Remix from "./icons/Remix.astro"
+import Solidjs from "./icons/Solidjs.astro"
+import Vue from "./icons/Vue.astro"
+import Typescript from "./icons/Typescript.astro"
+import Javascript from "./icons/Javascript.astro"
+import React from "./icons/React.astro"
+import Svelte from "./icons/Svelte.astro"
+import Nextjs from "./icons/Nextjs.astro"
+import Nodejs from "./icons/Nodejs.astro"
+import Deno from "./icons/Deno.astro"
+import Express from "./icons/Express.astro"
+import Bun from "./icons/Bun.astro"
+import Preact from "./icons/Preact.astro"
+import VueUse from "./icons/VueUse.astro"
+import Lit from "./icons/Lit.astro"
 
+const tecnologies = [
+  "Angular",
+  "NestJS",
+  "Remix",
+  "Solidjs",
+  "Vue",
+  "Typescript",
+  "Javascript",
+  "React",
+  "Svelte",
+  "Nextjs",
+  "Nodejs",
+  "Deno",
+  "Express",
+  "Bun",
+  "Preact",
+  "VueUse",
+  "Lit"
+].length
 ---
 
-<section>
-  <h4 class="text-lg dark:text-neutral-400">Frameworks and Libraries Compatibility</h4>
-  <main
-    class="overflow-hidden lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm"
-  >
-    <div class="flex">
-        
+<section class="w-full flex flex-col items-center">
+  <h4 class="text-lg dark:text-neutral-100 border dark:border-neutral-300 border-neutral-500 dark:bg-neutral-600/50 bg-neutral-200/50 text-neutral-700/95 rounded-full px-2">
+    Frameworks and Libraries Compatibility
+  </h4>
+  <main class="slider before:bg-fade-light-gradient dark:before:bg-fade-dark-gradient overflow-hidden w-9/12 mt-6">
+    <div class="slider-track flex gap-24">
+      <div class="slide">
+        <Javascript className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Typescript className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Angular className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <NestJS className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Remix className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Solidjs className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Vue className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <React className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Svelte className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Nextjs className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Nodejs className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Deno className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Express className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Bun className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Preact className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <VueUse className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Lit className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Javascript className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Typescript className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Angular className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <NestJS className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Remix className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Solidjs className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Vue className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <React className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Svelte className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Nextjs className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Nodejs className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Deno className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Express className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Bun className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Preact className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <VueUse className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <Lit className="h-12 w-h-12" />
+      </div>
     </div>
   </main>
 </section>
+<style define:vars={{ tecnologies }}>
+  .slider .slider-track {
+    animation: scroll 80s linear infinite;
+    width: calc(80px * (var(--tecnologies) * 2));
+  }
+  .slider .slide {
+    @apply dark:bg-transparent bg-neutral-900 p-2 rounded-lg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slider {
+    position: relative;
+
+  }
+  .slider::before,
+  .slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px; /* Ajusta el ancho del gradiente según sea necesario */
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .slider::before {
+    width: 100%;
+    left: 0;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-80px * var(--tecnologies)));
+    }
+  }
+</style>
