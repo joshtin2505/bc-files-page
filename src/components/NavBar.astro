@@ -1,10 +1,13 @@
 ---
 import BCFLogo from "./BCFLogo.astro"
-
+import GuitHub from "./icons/GuitHub.astro"
+import NPM from "./icons/NPM.astro"
 ---
 
 <!-- momentaniamente permanecera absolute -->
-<header class="absolute top-0 w-full bg-white border-b border-neutral-200 dark:border-neutral-900 dark:bg-black/50 backdrop-blur">
+<header
+  class="absolute top-0 w-full bg-white border-b border-neutral-200 dark:border-neutral-900 dark:bg-black/50 backdrop-blur"
+>
   <nav
     class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
   >
@@ -38,40 +41,38 @@ import BCFLogo from "./BCFLogo.astro"
           d="M1 1h15M1 7h15M1 13h15"></path>
       </svg>
     </button>
-    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+    <div class="hidden w-full md:flex gap-20 md:w-auto" id="navbar-default">
       <ul
-        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-neutral-100 rounded-lg bg-neutral-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-neutral-800/50 md:dark:bg-transparent dark:border-neutral-700"
+        class="font-medium flex flex-col md:justify-center md:items-center p-4 md:p-0 mt-4 border border-neutral-100 rounded-lg bg-neutral-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-neutral-800/50 md:dark:bg-transparent dark:border-neutral-700"
       >
         <li>
           <a
             href="#"
-            class="block py-2 px-3 text-white bg-neutral-700 rounded md:bg-transparent md:text-neutral-700 md:p-0 dark:text-white md:dark:text-neutral-500"
+            class="block py-2 px-3 text-white bg-neutral-700 rounded md:bg-transparent md:text-neutral-700 md:p-0 dark:text-white md:dark:text-neutral-500 transition-all hover:scale-110"
             aria-current="page">Home</a
           >
         </li>
-        
+
         <li>
           <a
-            href="/docs"
-            class="block py-2 px-3 text-neutral-900 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-neutral-700 md:p-0 dark:text-white md:dark:hover:text-neutral-500 dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            target="_blank"
+            href="https://github.com/joshtin2505/bc-files#readme"
+            class="block py-2 px-3 text-neutral-900 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-neutral-700 md:p-0 dark:text-white md:dark:hover:text-neutral-500 dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent transition-all hover:scale-110"
             >Docs</a
           >
         </li>
-        <li>
-          <a
-            href="#"
-            class="block py-2 px-3 text-neutral-900 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-neutral-700 md:p-0 dark:text-white md:dark:hover:text-neutral-500 dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent"
-            >Contact</a
-          >
-        </li>
       </ul>
+      <div class="flex gap-5 justify-center items-center">
+        <a target="_blank" href="https://github.com/joshtin2505/bc-files">
+          <GuitHub className="w-6 h-6 dark:fill-white fill-black hover:fill-neutral-800 dark:hover:fill-neutral-300 transition-all hover:scale-110" />
+        </a>
+        <a target="_blank" href="https://www.npmjs.com/package/bcfiles">
+          <NPM className="w-8 h-w-8 hover:opacity-80 transition-all hover:scale-110" />
+        </a>
+      </div>
     </div>
   </nav>
 </header>
-<script >
+<script>
   import { Collapse } from "flowbite"
-
-
-
-
 </script>
