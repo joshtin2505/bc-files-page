@@ -13,10 +13,10 @@ importers:
         version: 0.7.0(typescript@5.4.5)
       '@astrojs/tailwind':
         specifier: ^5.1.0
-        version: 5.1.0(astro@4.10.1(typescript@5.4.5))(tailwindcss@3.4.4)
+        version: 5.1.0(astro@4.10.2(typescript@5.4.5))(tailwindcss@3.4.4)
       astro:
-        specifier: ^4.10.1
-        version: 4.10.1(typescript@5.4.5)
+        specifier: ^4.10.2
+        version: 4.10.2(typescript@5.4.5)
       flowbite:
         specifier: ^2.3.0
         version: 2.3.0
@@ -28,8 +28,8 @@ importers:
         version: 5.4.5
     devDependencies:
       bcfiles:
-        specifier: ^1.2.5
-        version: 1.2.5
+        specifier: ^1.2.6
+        version: 1.2.6
 
 packages:
 
@@ -726,8 +726,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@shikijs/core@1.6.3':
-    resolution: {integrity: sha512-QnJKHFUW95GnlJLJGP6QLx4M69HM0KlXk+R2Y8lr/x4nAx1Yb/lsuxq4XwybuUjTxbJk+BT0g/kvn0bcsjGGHg==}
+  '@shikijs/core@1.6.4':
+    resolution: {integrity: sha512-WTU9rzZae1p2v6LOxMf6LhtmZOkIHYYW160IuahUyJy7YXPPjyWZLR1ag+SgD22ZMxZtz1gfU6Tccc8t0Il/XA==}
 
   '@types/babel__core@7.20.5':
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
@@ -853,8 +853,8 @@ packages:
   array-iterate@2.0.1:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
 
-  astro@4.10.1:
-    resolution: {integrity: sha512-7bbnUX1CW+12suz0Do8ef1CihqVjDyUW/H/0piNHZyBE3W/VFt5GP5ZxlPzzJLoGtaXif0aXJ4iPurEem2LpdA==}
+  astro@4.10.2:
+    resolution: {integrity: sha512-SBdkoOanPsxKlKVU4uu/XG0G7NYAFoqmfBtq9SPMJ34B7Hr1MxVdEugERs8IwYN6UaxdDVcqA++9PvH6Onq2cg==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -877,8 +877,8 @@ packages:
   base-64@1.0.0:
     resolution: {integrity: sha512-kwDPIFCGx0NZHog36dj+tHiwP4QMzsZ3AgMViUBKI0+V5n4U0ufTCUMhnQ04diaRI8EX/QcPfql7zlhZ7j4zgg==}
 
-  bcfiles@1.2.5:
-    resolution: {integrity: sha512-Bl2cVxF6cxWFtb78pjRzJ/6TUn4XbNFYOrHPjeuFJOv0REdeIbup1kl8GhcPk2YK3vM75AF1siXV4o8xWZsUyg==}
+  bcfiles@1.2.6:
+    resolution: {integrity: sha512-/UXVm9hzH1lU2AmjENEc1PdtzUs1+z+rlmxUDFP8hmodqjGqrHH0d0Z1i9D8fNVGU2w3Jbt+9C5nRifXUU7J9A==}
 
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
@@ -1052,8 +1052,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  electron-to-chromium@1.4.796:
-    resolution: {integrity: sha512-NglN/xprcM+SHD2XCli4oC6bWe6kHoytcyLKCWXmRL854F0qhPhaYgUswUsglnPxYaNQIg2uMY4BvaomIf3kLA==}
+  electron-to-chromium@1.4.798:
+    resolution: {integrity: sha512-by9J2CiM9KPGj9qfp5U4FcPSbXJG7FNzqnYaY4WLzX+v2PHieVGmnsA4dxfpGE3QEC7JofpPZmn7Vn1B9NR2+Q==}
 
   emmet@2.4.7:
     resolution: {integrity: sha512-O5O5QNqtdlnQM2bmKHtJgyChcrFMgQuulI+WdiOw2NArzprUqqxUW6bgYtKvzKgrsYpuLWalOkdhNP+1jluhCA==}
@@ -1871,8 +1871,8 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
-  shiki@1.6.3:
-    resolution: {integrity: sha512-lE1/YGlzFY0hQSyEfsZj18xGrTWxyhFQkaiILALqTBZPbJeYFWpbUhlmTGPOupYB/qC+H6sV4UznJzcEh3WMHQ==}
+  shiki@1.6.4:
+    resolution: {integrity: sha512-X88chM7w8jnadoZtjPTi5ahCJx9pc9f8GfEkZAEYUTlcUZIEw2D/RY86HI/LkkE7Nj8TQWkiBfaFTJ3VJT6ESg==}
 
   signal-exit@3.0.7:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
@@ -2328,7 +2328,7 @@ snapshots:
       remark-parse: 11.0.0
       remark-rehype: 11.1.0
       remark-smartypants: 2.1.0
-      shiki: 1.6.3
+      shiki: 1.6.4
       unified: 11.0.4
       unist-util-remove-position: 5.0.0
       unist-util-visit: 5.0.0
@@ -2341,9 +2341,9 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.0(astro@4.10.1(typescript@5.4.5))(tailwindcss@3.4.4)':
+  '@astrojs/tailwind@5.1.0(astro@4.10.2(typescript@5.4.5))(tailwindcss@3.4.4)':
     dependencies:
-      astro: 4.10.1(typescript@5.4.5)
+      astro: 4.10.2(typescript@5.4.5)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 4.0.2(postcss@8.4.38)
@@ -2857,7 +2857,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.18.0':
     optional: true
 
-  '@shikijs/core@1.6.3': {}
+  '@shikijs/core@1.6.4': {}
 
   '@types/babel__core@7.20.5':
     dependencies:
@@ -3009,7 +3009,7 @@ snapshots:
 
   array-iterate@2.0.1: {}
 
-  astro@4.10.1(typescript@5.4.5):
+  astro@4.10.2(typescript@5.4.5):
     dependencies:
       '@astrojs/compiler': 2.8.0
       '@astrojs/internal-helpers': 0.4.0
@@ -3062,7 +3062,7 @@ snapshots:
       rehype: 13.0.1
       resolve: 1.22.8
       semver: 7.6.2
-      shiki: 1.6.3
+      shiki: 1.6.4
       string-width: 7.1.0
       strip-ansi: 7.1.0
       tsconfck: 3.1.0(typescript@5.4.5)
@@ -3107,7 +3107,7 @@ snapshots:
 
   base-64@1.0.0: {}
 
-  bcfiles@1.2.5: {}
+  bcfiles@1.2.6: {}
 
   binary-extensions@2.3.0: {}
 
@@ -3133,7 +3133,7 @@ snapshots:
   browserslist@4.23.1:
     dependencies:
       caniuse-lite: 1.0.30001632
-      electron-to-chromium: 1.4.796
+      electron-to-chromium: 1.4.798
       node-releases: 2.0.14
       update-browserslist-db: 1.0.16(browserslist@4.23.1)
 
@@ -3264,7 +3264,7 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  electron-to-chromium@1.4.796: {}
+  electron-to-chromium@1.4.798: {}
 
   emmet@2.4.7:
     dependencies:
@@ -4367,9 +4367,9 @@ snapshots:
 
   shebang-regex@3.0.0: {}
 
-  shiki@1.6.3:
+  shiki@1.6.4:
     dependencies:
-      '@shikijs/core': 1.6.3
+      '@shikijs/core': 1.6.4
 
   signal-exit@3.0.7: {}
 
