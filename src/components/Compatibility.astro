@@ -16,9 +16,11 @@ import Bun from "./icons/Bun.astro"
 import Preact from "./icons/Preact.astro"
 import VueUse from "./icons/VueUse.astro"
 import Lit from "./icons/Lit.astro"
+import AstroIcon from "./icons/AstroIcon.astro"
 
 const tecnologies = [
   "Angular",
+  "Astro",
   "NestJS",
   "Remix",
   "Solidjs",
@@ -39,7 +41,7 @@ const tecnologies = [
 ---
 
 <section class="w-full flex flex-col items-center">
-  <h4 class="text-lg dark:text-neutral-100 border dark:border-neutral-300 border-neutral-500 dark:bg-neutral-600/50 bg-neutral-200/50 text-neutral-700/95 rounded-full px-2">
+  <h4 class="sm:text-lg dark:text-neutral-100 border dark:border-neutral-300 border-neutral-500 dark:bg-neutral-600/50 bg-neutral-200/50 text-neutral-700/95 rounded-full px-2">
     Frameworks and Libraries Compatibility
   </h4>
   <main class="slider before:bg-fade-light-gradient dark:before:bg-fade-dark-gradient overflow-hidden w-9/12 mt-6">
@@ -52,6 +54,9 @@ const tecnologies = [
       </div>
       <div class="slide">
         <Angular className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <AstroIcon className="h-12 w-h-12" />
       </div>
       <div class="slide">
         <NestJS className="h-12 w-h-12" />
@@ -103,6 +108,9 @@ const tecnologies = [
       </div>
       <div class="slide">
         <Angular className="h-12 w-h-12" />
+      </div>
+      <div class="slide">
+        <AstroIcon className="h-12 w-h-12" />
       </div>
       <div class="slide">
         <NestJS className="h-12 w-h-12" />
