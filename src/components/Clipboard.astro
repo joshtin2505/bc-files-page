@@ -10,7 +10,7 @@ const textJoin = text.split(" ").join("-")
 const btnId = textJoin + "-copy-btn"
 ---
 
-<astro-copy data-text={text} data-copy={btnId} class="w-full  max-w-[16rem]">
+<astro-copy data-text={text} data-copy={btnId} class="w-full max-w-48 sm:max-w-64">
   <div class="relative">
     <label for={textJoin} class="sr-only">Label</label>
     <input
