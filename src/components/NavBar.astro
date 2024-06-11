@@ -62,14 +62,22 @@ import NPM from "./icons/NPM.astro"
           >
         </li>
       </ul>
-      <div class="flex gap-5 justify-center items-center">
-        <a target="_blank" href="https://github.com/joshtin2505/bc-files">
-          <GuitHub className="w-6 h-6 dark:fill-white fill-black hover:fill-neutral-800 dark:hover:fill-neutral-300 transition-all hover:scale-110" />
-        </a>
-        <a target="_blank" href="https://www.npmjs.com/package/bcfiles">
-          <NPM className="w-8 h-w-8 hover:opacity-80 transition-all hover:scale-110" />
-        </a>
-      </div>
+      <ul class="flex gap-5 justify-center items-center">
+        <li>
+          <a target="_blank" href="https://github.com/joshtin2505/bc-files">
+            <GuitHub
+              className="w-6 h-6 dark:fill-white fill-black hover:fill-neutral-800 dark:hover:fill-neutral-300 transition-all hover:scale-110"
+            />
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.npmjs.com/package/bcfiles">
+            <NPM
+              className="w-8 h-w-8 hover:opacity-80 transition-all hover:scale-110"
+            />
+          </a>
+        </li>
+      </ul>
     </div>
   </nav>
 </header>
