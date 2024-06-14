@@ -1,0 +1,37 @@
+---
+import Download from "./icons/Download.astro"
+---
+
+<footer
+
+  class="absolute bottom-5 left-5 px-2 border border-neutral-300 bg-neutral-300/50 dark:border-neutral-700 dark:bg-neutral-700/50 rounded-full opacity-70"
+>
+  <figure class="flex items-center gap-1">
+    <Download className="h-5 w-5" />
+    <p>
+      Weekly:
+      <span
+        id="visit-count"
+aria-live="polite"
+        class="dark:text-neutral-50 font-mono tracking-wide font-bold" >0</span
+      >
+    </p>
+  </figure>
+</footer>
+<script>
+  interface NPMData {
+    downloads: number
+    start: string
+    end: string
+    package: string
+  }
+
+  fetch(`https://api.npmjs.org/downloads/point/last-week/bcfiles`)
+    .then((response) => response.json())
+    .then((data: NPMData) => {
+      const element = document.getElementById("visit-count")
+      if (element) {
+        element.innerText = data.downloads.toLocaleString()
+      }
+    })
+</script>
