@@ -13,7 +13,7 @@ export default defineConfig({
       priority: 0.7,
       lastmod: new Date("2024-06-14"), // Fecha de última modificación por defecto
       serialize(item) {
-        if (item.url === "https://www.tudominio.com/") {
+        if (item.url === "https://bcfiles.vercel.app") {
           item.changefreq = "daily"
           item.priority = 1.0
         }
